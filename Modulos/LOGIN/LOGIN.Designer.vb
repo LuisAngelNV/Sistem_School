@@ -29,9 +29,12 @@ Partial Class LOGIN
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.tb_Password = New System.Windows.Forms.TextBox()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnAcceder = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.datalistado = New System.Windows.Forms.DataGridView()
+        Me.Eli = New System.Windows.Forms.DataGridViewImageColumn()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -94,17 +97,17 @@ Partial Class LOGIN
         Me.tb_Password.Text = "Password"
         Me.tb_Password.UseSystemPasswordChar = True
         '
-        'Button2
+        'btnAcceder
         '
-        Me.Button2.BackColor = System.Drawing.Color.Blue
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.Yellow
-        Me.Button2.Location = New System.Drawing.Point(114, 438)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(178, 30)
-        Me.Button2.TabIndex = 6
-        Me.Button2.Text = "Acceder"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnAcceder.BackColor = System.Drawing.Color.Blue
+        Me.btnAcceder.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAcceder.ForeColor = System.Drawing.Color.Yellow
+        Me.btnAcceder.Location = New System.Drawing.Point(114, 438)
+        Me.btnAcceder.Name = "btnAcceder"
+        Me.btnAcceder.Size = New System.Drawing.Size(178, 30)
+        Me.btnAcceder.TabIndex = 6
+        Me.btnAcceder.Text = "Acceder"
+        Me.btnAcceder.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -116,14 +119,44 @@ Partial Class LOGIN
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Ingrese contraseña"
         '
+        'datalistado
+        '
+        Me.datalistado.AllowUserToAddRows = False
+        Me.datalistado.AllowUserToDeleteRows = False
+        Me.datalistado.AllowUserToResizeColumns = False
+        Me.datalistado.AllowUserToResizeRows = False
+        Me.datalistado.BackgroundColor = System.Drawing.Color.White
+        Me.datalistado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Eli})
+        Me.datalistado.EnableHeadersVisualStyles = False
+        Me.datalistado.Location = New System.Drawing.Point(12, 51)
+        Me.datalistado.Name = "datalistado"
+        Me.datalistado.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.datalistado.RowHeadersVisible = False
+        Me.datalistado.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.datalistado.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
+        Me.datalistado.RowTemplate.ReadOnly = True
+        Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.datalistado.Size = New System.Drawing.Size(49, 98)
+        Me.datalistado.TabIndex = 8
+        '
+        'Eli
+        '
+        Me.Eli.HeaderText = ""
+        Me.Eli.Image = CType(resources.GetObject("Eli.Image"), System.Drawing.Image)
+        Me.Eli.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.Eli.Name = "Eli"
+        '
         'LOGIN
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(397, 578)
+        Me.Controls.Add(Me.datalistado)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnAcceder)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.tb_Password)
         Me.Controls.Add(Me.Panel1)
@@ -135,6 +168,7 @@ Partial Class LOGIN
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -146,6 +180,8 @@ Partial Class LOGIN
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents tb_Password As TextBox
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnAcceder As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents datalistado As DataGridView
+    Friend WithEvents Eli As DataGridViewImageColumn
 End Class
