@@ -48,6 +48,9 @@ Public Class UsuariosOk
             da.Fill(dt)
             datalistado.DataSource = dt
             cerrar()
+            'Mandar a llamar al elemento que modiica la tabla modelo(tabla en la que se aplicara)
+            Multilinea(datalistado)
+
         Catch ex As Exception : MsgBox(ex.Message)
 
         End Try

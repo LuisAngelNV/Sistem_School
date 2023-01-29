@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexiòn\CONNECTIONMUESTRA.vb" />
+    <Compile Include="Conexiòn\Tamaño_Automatico_DataTable.vb" />
     <Compile Include="LOGIN.vb">
       <SubType>Form</SubType>
     </Compile>
