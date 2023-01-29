@@ -72,10 +72,10 @@
   <ItemGroup>
     <Compile Include="Conexiòn\CONNECTIONMUESTRA.vb" />
     <Compile Include="Conexiòn\Tamaño_Automatico_DataTable.vb" />
-    <Compile Include="LOGIN.vb">
+    <Compile Include="Modulos\LOGIN\LOGIN.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LOGIN.Designer.vb">
+    <Compile Include="Modulos\LOGIN\LOGIN.Designer.vb">
       <DependentUpon>LOGIN.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
@@ -95,15 +95,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="UsuariosOk.Designer.vb">
+    <Compile Include="Modulos\USUARIOS\UsuariosOk.Designer.vb">
       <DependentUpon>UsuariosOk.vb</DependentUpon>
     </Compile>
-    <Compile Include="UsuariosOk.vb">
+    <Compile Include="Modulos\USUARIOS\UsuariosOk.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="LOGIN.resx">
+    <EmbeddedResource Include="Modulos\LOGIN\LOGIN.resx">
       <DependentUpon>LOGIN.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -112,7 +112,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="UsuariosOk.resx">
+    <EmbeddedResource Include="Modulos\USUARIOS\UsuariosOk.resx">
       <DependentUpon>UsuariosOk.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
