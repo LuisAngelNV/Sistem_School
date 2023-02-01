@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class LOGIN
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class LOGIN
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LOGIN))
         Me.Button1 = New System.Windows.Forms.Button()
@@ -130,7 +130,7 @@ Partial Class LOGIN
         Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Eli})
         Me.datalistado.EnableHeadersVisualStyles = False
-        Me.datalistado.Location = New System.Drawing.Point(12, 51)
+        Me.datalistado.Location = New System.Drawing.Point(254, 93)
         Me.datalistado.Name = "datalistado"
         Me.datalistado.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.datalistado.RowHeadersVisible = False
@@ -138,7 +138,7 @@ Partial Class LOGIN
         Me.datalistado.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
         Me.datalistado.RowTemplate.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(49, 98)
+        Me.datalistado.Size = New System.Drawing.Size(10, 10)
         Me.datalistado.TabIndex = 8
         '
         'Eli
@@ -154,7 +154,6 @@ Partial Class LOGIN
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(397, 578)
-        Me.Controls.Add(Me.datalistado)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnAcceder)
         Me.Controls.Add(Me.Panel2)
@@ -163,6 +162,7 @@ Partial Class LOGIN
         Me.Controls.Add(Me.tbUsuario)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.datalistado)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "LOGIN"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

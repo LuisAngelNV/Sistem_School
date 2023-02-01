@@ -33,10 +33,10 @@ Partial Class UsuariosOk
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.Eli = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.IdUsuario = New System.Windows.Forms.Label()
         Me.Num_Usuario = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.CheckBox8 = New System.Windows.Forms.CheckBox()
         Me.CheckBox7 = New System.Windows.Forms.CheckBox()
         Me.CheckBox6 = New System.Windows.Forms.CheckBox()
@@ -172,6 +172,7 @@ Partial Class UsuariosOk
         '
         'Panel4
         '
+        Me.Panel4.Controls.Add(Me.Button2)
         Me.Panel4.Controls.Add(Me.IdUsuario)
         Me.Panel4.Controls.Add(Me.Num_Usuario)
         Me.Panel4.Controls.Add(Me.Panel5)
@@ -183,10 +184,23 @@ Partial Class UsuariosOk
         Me.Panel4.Controls.Add(Me.Label2)
         Me.Panel4.Controls.Add(Me.MenuStrip1)
         Me.Panel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel4.Location = New System.Drawing.Point(28, 103)
+        Me.Panel4.Location = New System.Drawing.Point(0, 71)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(671, 324)
+        Me.Panel4.Size = New System.Drawing.Size(678, 338)
         Me.Panel4.TabIndex = 3
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.Red
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.Location = New System.Drawing.Point(637, 0)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(39, 38)
+        Me.Button2.TabIndex = 16
+        Me.Button2.Text = "X"
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'IdUsuario
         '
@@ -211,7 +225,6 @@ Partial Class UsuariosOk
         '
         'Panel5
         '
-        Me.Panel5.Controls.Add(Me.Button2)
         Me.Panel5.Controls.Add(Me.CheckBox8)
         Me.Panel5.Controls.Add(Me.CheckBox7)
         Me.Panel5.Controls.Add(Me.CheckBox6)
@@ -221,23 +234,10 @@ Partial Class UsuariosOk
         Me.Panel5.Controls.Add(Me.CheckBox2)
         Me.Panel5.Controls.Add(Me.CheckBox1)
         Me.Panel5.Controls.Add(Me.Label6)
-        Me.Panel5.Location = New System.Drawing.Point(398, 3)
+        Me.Panel5.Location = New System.Drawing.Point(385, 17)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(356, 338)
+        Me.Panel5.Size = New System.Drawing.Size(246, 245)
         Me.Panel5.TabIndex = 12
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.Red
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(234, 0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(39, 38)
-        Me.Button2.TabIndex = 16
-        Me.Button2.Text = "X"
-        Me.Button2.UseVisualStyleBackColor = False
         '
         'CheckBox8
         '
@@ -406,9 +406,9 @@ Partial Class UsuariosOk
         Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnGuardar, Me.BTBGuardarCambios})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 295)
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 309)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(671, 29)
+        Me.MenuStrip1.Size = New System.Drawing.Size(678, 29)
         Me.MenuStrip1.TabIndex = 13
         Me.MenuStrip1.Text = "MenuStrip1"
         '

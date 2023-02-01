@@ -7,6 +7,9 @@ Public Class UsuariosOk
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Panel4.Visible = True
+        txtnombre.Clear()
+        txtContraseña.Clear()
+        txtUsuario.Clear()
 
     End Sub
 
@@ -48,6 +51,7 @@ Public Class UsuariosOk
             da.Fill(dt)
             datalistado.DataSource = dt
             cerrar()
+            datalistado.Columns(1).Visible = False
             'Mandar a llamar al elemento que modiica la tabla modelo(tabla en la que se aplicara)
             Multilinea(datalistado)
 
@@ -100,6 +104,29 @@ Public Class UsuariosOk
     End Sub
 
     Private Sub datalistado_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellClick
+
+    End Sub
+
+    Sub buscar()
+        Dim dt As New DataTable
+        Dim de As New SqlDataAdapter
+        Try
+            abrir()
+            de = New SqlDataAdapter("buscar_Usuario", connection)
+            de.SelectCommand.CommandType = 4
+            de.SelectCommand.Parameters.AddWithValue("@letra", tbBuscarUsuario.Text)
+            de.Fill(dt)
+            datalistado.DataSource = dt
+            cerrar()
+        Catch ex As Exception : MsgBox(ex.Message)
+
+        End Try
+    End Sub
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles tbBuscarUsuario.TextChanged
+        buscar()
+    End Sub
+
+    Private Sub datalistado_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellContentClick
         If e.ColumnIndex = Me.datalistado.Columns.Item("Eli").Index Then
             Dim resultado As DialogResult
             resultado = MessageBox.Show("¿Realmnete desea eliminar este usuario?", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
@@ -121,24 +148,5 @@ Public Class UsuariosOk
             MessageBox.Show("Cancelando eliminacion de este usuario", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Information)
 
         End If
-    End Sub
-
-    Sub buscar()
-        Dim dt As New DataTable
-        Dim de As New SqlDataAdapter
-        Try
-            abrir()
-            de = New SqlDataAdapter("buscar_Usuario", connection)
-            de.SelectCommand.CommandType = 4
-            de.SelectCommand.Parameters.AddWithValue("@letra", tbBuscarUsuario.Text)
-            de.Fill(dt)
-            datalistado.DataSource = dt
-            cerrar()
-        Catch ex As Exception : MsgBox(ex.Message)
-
-        End Try
-    End Sub
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles tbBuscarUsuario.TextChanged
-        buscar()
     End Sub
 End Class
