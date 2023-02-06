@@ -85,6 +85,18 @@
       <DependentUpon>LOGIN.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Modulos\MATRICULAS\Matriculas.Designer.vb">
+      <DependentUpon>Matriculas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\MATRICULAS\Matriculas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\MATRICULAS\SERIALIZACION.Designer.vb">
+      <DependentUpon>SERIALIZACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\MATRICULAS\SERIALIZACION.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Modulos\MENUPRINCIPAL\MenuPrincipalMatriculas.Designer.vb">
       <DependentUpon>MenuPrincipalMatriculas.vb</DependentUpon>
     </Compile>
@@ -120,6 +132,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\LOGIN\LOGIN.resx">
       <DependentUpon>LOGIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\MATRICULAS\Matriculas.resx">
+      <DependentUpon>Matriculas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\MATRICULAS\SERIALIZACION.resx">
+      <DependentUpon>SERIALIZACION.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\MENUPRINCIPAL\MenuPrincipalMatriculas.resx">
       <DependentUpon>MenuPrincipalMatriculas.vb</DependentUpon>
