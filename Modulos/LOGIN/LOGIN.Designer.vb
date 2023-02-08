@@ -33,8 +33,12 @@ Partial Class LOGIN
         Me.Label1 = New System.Windows.Forms.Label()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.Eli = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Mostrar_Contraseña = New System.Windows.Forms.PictureBox()
+        Me.Ocultar_Contraseña = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Mostrar_Contraseña, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Ocultar_Contraseña, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -148,12 +152,34 @@ Partial Class LOGIN
         Me.Eli.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
         Me.Eli.Name = "Eli"
         '
+        'Mostrar_Contraseña
+        '
+        Me.Mostrar_Contraseña.Image = CType(resources.GetObject("Mostrar_Contraseña.Image"), System.Drawing.Image)
+        Me.Mostrar_Contraseña.Location = New System.Drawing.Point(342, 361)
+        Me.Mostrar_Contraseña.Name = "Mostrar_Contraseña"
+        Me.Mostrar_Contraseña.Size = New System.Drawing.Size(27, 28)
+        Me.Mostrar_Contraseña.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Mostrar_Contraseña.TabIndex = 9
+        Me.Mostrar_Contraseña.TabStop = False
+        '
+        'Ocultar_Contraseña
+        '
+        Me.Ocultar_Contraseña.Image = CType(resources.GetObject("Ocultar_Contraseña.Image"), System.Drawing.Image)
+        Me.Ocultar_Contraseña.Location = New System.Drawing.Point(342, 361)
+        Me.Ocultar_Contraseña.Name = "Ocultar_Contraseña"
+        Me.Ocultar_Contraseña.Size = New System.Drawing.Size(27, 28)
+        Me.Ocultar_Contraseña.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Ocultar_Contraseña.TabIndex = 10
+        Me.Ocultar_Contraseña.TabStop = False
+        '
         'LOGIN
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(397, 578)
+        Me.Controls.Add(Me.Ocultar_Contraseña)
+        Me.Controls.Add(Me.Mostrar_Contraseña)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnAcceder)
         Me.Controls.Add(Me.Panel2)
@@ -169,6 +195,8 @@ Partial Class LOGIN
         Me.Text = "Form1"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Mostrar_Contraseña, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Ocultar_Contraseña, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -184,4 +212,6 @@ Partial Class LOGIN
     Friend WithEvents Label1 As Label
     Friend WithEvents datalistado As DataGridView
     Friend WithEvents Eli As DataGridViewImageColumn
+    Friend WithEvents Mostrar_Contraseña As PictureBox
+    Friend WithEvents Ocultar_Contraseña As PictureBox
 End Class

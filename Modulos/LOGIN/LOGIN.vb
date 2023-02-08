@@ -16,6 +16,7 @@ Public Class LOGIN
     End Sub
 
     Private Sub LOGIN_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Ocultar_Contraseña.Visible = False
 
     End Sub
 
@@ -47,4 +48,15 @@ Public Class LOGIN
         End Try
     End Sub
 
+    Private Sub Mostrar_Contraseña_Click(sender As Object, e As EventArgs) Handles Mostrar_Contraseña.Click
+        tb_Password.UseSystemPasswordChar = False
+        Mostrar_Contraseña.Visible = False
+        Ocultar_Contraseña.Visible = True
+    End Sub
+
+    Private Sub Ocultar_Contraseña_Click(sender As Object, e As EventArgs) Handles Ocultar_Contraseña.Click
+        tb_Password.UseSystemPasswordChar = True
+        Mostrar_Contraseña.Visible = True
+        Ocultar_Contraseña.Visible = False
+    End Sub
 End Class
